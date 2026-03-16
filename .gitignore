@@ -12,5 +12,8 @@ data/*.json
 .vscode/
 .idea/
 
+# Dagster
+.tmp_dagster_home*/
+
 # OS
 .DS_Store
