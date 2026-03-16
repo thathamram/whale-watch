@@ -1,0 +1,31 @@
+[0m20:57:01.182173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092e4aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096c5a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109952210>]}
+
+
+============================== 20:57:01.186463 | 86185748-57f5-44c6-9b64-b3fdb564f387 ==============================
+[0m20:57:01.186463 [info ] [MainThread]: Running with dbt=1.11.7
+[0m20:57:01.186689 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'empty': 'None', 'partial_parse': 'True', 'profiles_dir': '/Users/rtai/.dbt', 'debug': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'quiet': 'False', 'version_check': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init whale_watch', 'write_json': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_path': 'logs', 'no_print': 'None', 'fail_fast': 'False'}
+[0m20:57:01.192942 [info ] [MainThread]: Creating dbt configuration folder at /Users/rtai/.dbt
+[0m20:57:01.193449 [debug] [MainThread]: Starter project path: /Users/rtai/projects/whale-watch/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m20:57:01.195552 [info ] [MainThread]: 
+Your new dbt project "whale_watch" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:57:01.195663 [info ] [MainThread]: Setting up your profile.
+[0m20:57:06.575343 [info ] [MainThread]: Profile whale_watch written to /Users/rtai/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m20:57:06.703821 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 5.5607357, "process_in_blocks": "0", "process_kernel_time": 0.246728, "process_mem_max_rss": "136609792", "process_out_blocks": "0", "process_user_time": 1.041859}
+[0m20:57:06.705139 [debug] [MainThread]: Command `dbt init` succeeded at 20:57:06.704914 after 5.56 seconds
+[0m20:57:06.705974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092e4aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109958680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a88050>]}
+[0m20:57:06.706786 [debug] [MainThread]: Flushing usage events
+[0m20:57:06.920705 [debug] [MainThread]: An error was encountered while trying to flush usage events
