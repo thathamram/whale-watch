@@ -1,4 +1,4 @@
-name: 🐋 Whale Watch Pipeline
+name:  Whale Watch Pipeline
 
    on:
      push:
