@@ -1,0 +1,6 @@
+whale_watch:
+  outputs:
+    dev:
+      type: duckdb
+      path: ../../data/whale_watch.duckdb
+  target: dev

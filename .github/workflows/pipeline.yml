@@ -32,9 +32,9 @@ jobs:
       - name: Run dbt models
         run: |
           cd transform/whale_watch
-          dbt run
+          dbt run --profiles-dir .
 
       - name: Run dbt tests
         run: |
           cd transform/whale_watch
-          dbt test
+          dbt test --profiles-dir .
