@@ -23,15 +23,23 @@ def get_latest_block():
        # Convert to int: int(hex_string, 16)
        return int(data["result"], 16)
        
-def get_block_transactions(block_number):
+def get_block_transactions(block_number, retries=3):
        """Get all transactions in a given block."""
        block_hex = hex(block_number)
        url=f"https://api.etherscan.io/v2/api?chainid=1&module=proxy&action=eth_getBlockByNumber&tag={block_hex}&boolean=true&apikey={ETHERSCAN_API_KEY}"
-       # Make the request, parse the JSON
-       # Return the list of transactions
-       response = requests.get(url)
-       data = response.json()
-       return data["result"]["transactions"]
+       import time
+       for attempt in range(retries):
+           response = requests.get(url)
+           data = response.json()
+           result = data.get("result")
+           if isinstance(result, dict) and "transactions" in result:
+               return result["transactions"]
+           # API returned an error or rate limit — wait and retry
+           print(f"    Retrying block {block_number} ({attempt + 1}/{retries})...")
+           time.sleep(2)
+       # All retries exhausted — return empty list instead of crashing
+       print(f"    Skipping block {block_number} after {retries} retries")
+       return []
        
 def filter_whales(transactions):
        """Filter transactions >= WHALE_THRESHOLD_ETH."""
