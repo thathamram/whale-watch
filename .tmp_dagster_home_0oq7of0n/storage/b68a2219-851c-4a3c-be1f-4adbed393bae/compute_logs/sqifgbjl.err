@@ -1,0 +1,7 @@
+[32m2026-03-15 22:25:44 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b68a2219-851c-4a3c-be1f-4adbed393bae - 24849 - LOGS_CAPTURED - Started capturing logs in process (pid: 24849).
+[32m2026-03-15 22:25:44 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b68a2219-851c-4a3c-be1f-4adbed393bae - 24849 - dbt_tests - STEP_START - Started execution of step "dbt_tests".
+[32m2026-03-15 22:25:45 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b68a2219-851c-4a3c-be1f-4adbed393bae - 24849 - dbt_tests - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-03-15 22:25:45 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b68a2219-851c-4a3c-be1f-4adbed393bae - dbt_tests - Writing file at: /Users/rtai/projects/whale-watch/.tmp_dagster_home_0oq7of0n/storage/dbt_tests using PickledObjectFilesystemIOManager...
+[32m2026-03-15 22:25:45 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b68a2219-851c-4a3c-be1f-4adbed393bae - 24849 - dbt_tests - ASSET_MATERIALIZATION - Materialized value dbt_tests.
+[32m2026-03-15 22:25:45 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b68a2219-851c-4a3c-be1f-4adbed393bae - 24849 - dbt_tests - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-03-15 22:25:45 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b68a2219-851c-4a3c-be1f-4adbed393bae - 24849 - dbt_tests - STEP_SUCCESS - Finished execution of step "dbt_tests" in 1.23s.

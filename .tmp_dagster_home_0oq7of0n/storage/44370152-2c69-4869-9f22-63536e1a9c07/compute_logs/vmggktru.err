@@ -1,0 +1,24 @@
+[32m2026-03-15 22:23:51 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 44370152-2c69-4869-9f22-63536e1a9c07 - 24623 - LOGS_CAPTURED - Started capturing logs in process (pid: 24623).
+[32m2026-03-15 22:23:51 -0400[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 44370152-2c69-4869-9f22-63536e1a9c07 - 24623 - dbt_models - STEP_START - Started execution of step "dbt_models".
+[32m2026-03-15 22:23:51 -0400[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - 44370152-2c69-4869-9f22-63536e1a9c07 - 24623 - dbt_models - STEP_FAILURE - Execution of step "dbt_models" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "dbt_models"::
+
+Exception: dbt run failed: /Users/rtai/projects/whale-watch/.venv/bin/python3: No module named dbt.__main__; 'dbt' is a package and cannot be directly executed
+
+
+Stack Trace:
+  File "/Users/rtai/projects/whale-watch/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "/Users/rtai/projects/whale-watch/.venv/lib/python3.12/site-packages/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/Users/rtai/projects/whale-watch/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/compute_generator.py", line 135, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/Users/rtai/projects/whale-watch/.venv/lib/python3.12/site-packages/dagster/_core/execution/plan/compute_generator.py", line 115, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+                                                                    ^^^^^^^^^^^^^^^^^^
+  File "/Users/rtai/projects/whale-watch/orchestration/definitions.py", line 47, in dbt_models
+    raise Exception(f"dbt run failed: {result.stderr}")
+[0m

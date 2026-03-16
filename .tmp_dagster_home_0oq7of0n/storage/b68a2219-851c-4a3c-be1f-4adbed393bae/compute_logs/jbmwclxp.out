@@ -1,0 +1,22 @@
+[0m02:25:42  Running with dbt=1.11.7
+[0m02:25:42  Registered adapter: duckdb=1.10.1
+[0m02:25:42  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.whale_watch.example
+[0m02:25:43  Found 3 models, 5 data tests, 474 macros
+[0m02:25:43  
+[0m02:25:43  Concurrency: 1 threads (target='dev')
+[0m02:25:43  
+[0m02:25:43  1 of 3 START sql view model main.stg_whale_transactions ........................ [RUN]
+[0m02:25:43  1 of 3 OK created sql view model main.stg_whale_transactions ................... [[32mOK[0m in 0.03s]
+[0m02:25:43  2 of 3 START sql view model main.int_whale_transactions_enriched ............... [RUN]
+[0m02:25:43  2 of 3 OK created sql view model main.int_whale_transactions_enriched .......... [[32mOK[0m in 0.01s]
+[0m02:25:43  3 of 3 START sql view model main.mart_whale_summary ............................ [RUN]
+[0m02:25:43  3 of 3 OK created sql view model main.mart_whale_summary ....................... [[32mOK[0m in 0.03s]
+[0m02:25:43  
+[0m02:25:43  Finished running 3 view models in 0 hours 0 minutes and 0.12 seconds (0.12s).
+[0m02:25:43  
+[0m02:25:43  [32mCompleted successfully[0m
+[0m02:25:43  
+[0m02:25:43  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+

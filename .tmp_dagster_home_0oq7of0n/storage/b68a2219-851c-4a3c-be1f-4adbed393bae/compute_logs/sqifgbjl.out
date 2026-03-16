@@ -1,0 +1,26 @@
+[0m02:25:44  Running with dbt=1.11.7
+[0m02:25:44  Registered adapter: duckdb=1.10.1
+[0m02:25:44  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.whale_watch.example
+[0m02:25:44  Found 3 models, 5 data tests, 474 macros
+[0m02:25:44  
+[0m02:25:44  Concurrency: 1 threads (target='dev')
+[0m02:25:44  
+[0m02:25:44  1 of 5 START test accepted_values_stg_whale_transactions_whale_tier___mega_whale___dolphin___fish  [RUN]
+[0m02:25:44  1 of 5 PASS accepted_values_stg_whale_transactions_whale_tier___mega_whale___dolphin___fish  [[32mPASS[0m in 0.02s]
+[0m02:25:44  2 of 5 START test not_null_stg_whale_transactions_tx_hash ...................... [RUN]
+[0m02:25:44  2 of 5 PASS not_null_stg_whale_transactions_tx_hash ............................ [[32mPASS[0m in 0.01s]
+[0m02:25:44  3 of 5 START test not_null_stg_whale_transactions_value_eth .................... [RUN]
+[0m02:25:44  3 of 5 PASS not_null_stg_whale_transactions_value_eth .......................... [[32mPASS[0m in 0.00s]
+[0m02:25:44  4 of 5 START test not_null_stg_whale_transactions_whale_tier ................... [RUN]
+[0m02:25:44  4 of 5 PASS not_null_stg_whale_transactions_whale_tier ......................... [[32mPASS[0m in 0.00s]
+[0m02:25:44  5 of 5 START test unique_stg_whale_transactions_tx_hash ........................ [RUN]
+[0m02:25:44  5 of 5 PASS unique_stg_whale_transactions_tx_hash .............................. [[32mPASS[0m in 0.01s]
+[0m02:25:44  
+[0m02:25:44  Finished running 5 data tests in 0 hours 0 minutes and 0.07 seconds (0.07s).
+[0m02:25:44  
+[0m02:25:44  [32mCompleted successfully[0m
+[0m02:25:44  
+[0m02:25:44  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+
