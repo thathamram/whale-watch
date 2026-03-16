@@ -58,6 +58,7 @@ def filter_whales(transactions):
        
        
 def save_to_duckdb(whales):
+       os.makedirs(os.path.dirname(DUCKDB_PATH), exist_ok=True)
        con = duckdb.connect(DUCKDB_PATH)
        con.execute("""
            CREATE TABLE IF NOT EXISTS raw_whale_transactions (
