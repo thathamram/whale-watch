@@ -28,4 +28,4 @@ python ingest/ingest.py
 - [x] Milestone 2: dbt models
 - [x] Milestone 3: Orchestration
 - [x] Milestone 4: Dashboard
-- [ ] Milestone 5: Ship it
+- [x] Milestone 5: Ship it
